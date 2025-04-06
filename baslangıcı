@@ -103,7 +103,7 @@ insert into Adresler values ('Kayseri','Köşk','Köşk',8,3901,'Türkiye')
 
 
 use Kutuphane
-select*from kitaplar
+select*from kitaplar;
 insert into kitaplar values (123456,688,'Suç ve Ceza','2015')
 insert into kitaplar values (234567,160,'Kürk Mantolu Madonna','2020')
 insert into kitaplar values (345678,256,'İçimizdeki Şeytan','2021')
@@ -114,3 +114,120 @@ insert into kitaplar values (789012,464,'İki Şehrin Hikayesi','2011')
 insert into kitaplar values (890123,184,'İnsancıklar','2013')
 insert into kitaplar values (901234,112,'İnsan neyle yaşar','2020')
 insert into kitaplar values (012345,128,'Sokratesin Savunması','2019')
+
+
+
+use Kutuphane
+select*from uyeler;
+insert into uyeler values ('Ali','Yılmaz','alyıl@gmail.com',5555555555,'E',1)
+insert into uyeler values ('Merve','Güler','megül@gmail.com',5666666666,'K',2)
+insert into uyeler values ('Nisa','Güler','nigül@gmail.com',5777777777,'K',3)
+insert into uyeler values ('Safa','Cihan','saci@gmail.com',5888888888,'E',4)
+insert into uyeler values ('Alya','Demir','aldem@gmail.com',5999999999,'K',5)
+insert into uyeler values ('Nalan','Akcan','nalak@gmail.com',5000000000,'K',6)
+insert into uyeler values ('Ayaz','Akyüz','ayyüz@gmail.com',511111111,'E',7)
+insert into uyeler values ('Aden','Altın','adal@gmail.com',5222222222,'K',8)
+insert into uyeler values ('Kerim','Bulut','kebu@gmail.com',5333333333,'E',9)
+insert into uyeler values ('Nergis','Çelik','neçe@gmail.com',5444444444,'K',0)
+
+
+
+
+use Kutuphane
+select*from kutuphane; 
+insert into kutuphane values ('A','Başlangıç',2)
+insert into kutuphane values ('B','Roman',3)
+insert into kutuphane values ('C','Hikaye',4)
+insert into kutuphane values ('D','Anı',5)
+insert into kutuphane values ('E','Biyografi',6)
+insert into kutuphane values ('F','Dini',7)
+insert into kutuphane values ('G','Tiyatro',8)
+insert into kutuphane values ('H','Masal',9)
+insert into kutuphane values ('I','Osmanlı',8)
+insert into kutuphane values ('J','İngilizce',1)
+
+
+use Kutuphane
+select*from emanet;
+insert into emanet values('01.04.2025','04.04.2025',2,2,012345)
+insert into emanet values('26.03.2025','01.04.2025',3,3,123456)
+insert into emanet values('27.03.2025','02.04.2025',4,4,234567)
+insert into emanet values('28.03.2025','03.04.2025',5,5,345678)
+insert into emanet values('29.03.2025','04.04.2025',6,6,456789)
+insert into emanet values('10.02.2025','10.03.2025',7,7,567890)
+insert into emanet values('11.02.2025','15.02.2025',8,8,678901)
+insert into emanet values('12.02.2025','16.02.2025',9,9,789012)
+insert into emanet values('14.02.2025','20.02.2025',8,8,890123)
+insert into emanet values('18.02.2025','20.02.2025',2,2,901234)
+
+
+
+use Kutuphane
+select*from Yazarlar;
+insert into Yazarlar values ('Fyodor','Dostoyevski')
+insert into Yazarlar values ('Sabahattin','Ali')
+insert into Yazarlar values ('Sabahattin','Ali')
+insert into Yazarlar values ('Pierre','Franckh')
+insert into Yazarlar values ('Victor','Hugo')
+insert into Yazarlar values ('Lev','Tolstoy')
+insert into Yazarlar values ('Charles','Dickens')
+insert into Yazarlar values ('Fyodor','Dostoyevski')
+insert into Yazarlar values ('Lev','Tolstoy')
+insert into Yazarlar values ('Platon','-')
+
+
+use Kutuphane
+select* from Kategori;
+insert into Kategori values ('Psikoloji')
+insert into Kategori values ('Aşk')
+insert into Kategori values ('Çatışma')
+insert into Kategori values ('Polisiye')
+insert into Kategori values ('Sosyal')
+insert into Kategori values ('Tarih')
+insert into Kategori values ('Devrim')
+insert into Kategori values ('Toplum')
+insert into Kategori values ('Felsefe')
+insert into Kategori values ('Felsefe')
+
+
+use Kutuphane
+select*from Kategori_Kitap;
+insert into Kategori_Kitap values (12345,1)
+insert into Kategori_Kitap values (123456,2)
+insert into Kategori_Kitap values (234567,3)
+insert into Kategori_Kitap values (345678,4)
+insert into Kategori_Kitap values (456789,5)
+insert into Kategori_Kitap values (567890,6)
+insert into Kategori_Kitap values (678901,7)
+insert into Kategori_Kitap values (789012,8)
+insert into Kategori_Kitap values (890123,9)
+insert into Kategori_Kitap values (901234,10)
+
+
+use Kutuphane 
+select*from Kitap_Yazarlar;
+insert into Kitap_Yazarlar values (12345,1)
+insert into Kitap_Yazarlar values (123456,2)
+insert into Kitap_Yazarlar values (234567,3)
+insert into Kitap_Yazarlar values (345678,4)
+insert into Kitap_Yazarlar values (456789,5)
+insert into Kitap_Yazarlar values (567890,6)
+insert into Kitap_Yazarlar values (678901,7)
+insert into Kitap_Yazarlar values (789012,8)
+insert into Kitap_Yazarlar values (890123,9)
+insert into Kitap_Yazarlar values (901234,10)
+
+
+
+use Kutuphane
+select*from Kitap_Kutuphane;
+insert into Kitap_Kutuphane values(12345,1,12)
+insert into Kitap_Kutuphane values(123456,2,20)
+insert into Kitap_Kutuphane values(234567,3,5)
+insert into Kitap_Kutuphane values(345678,4,15)
+insert into Kitap_Kutuphane values(456789,5,7)
+insert into Kitap_Kutuphane values(567890,6,10)
+insert into Kitap_Kutuphane values(678901,7,11)
+insert into Kitap_Kutuphane values(789012,8,14)
+insert into Kitap_Kutuphane values(890123,9,12)
+insert into Kitap_Kutuphane values(901234,10,10)
